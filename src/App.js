@@ -8,7 +8,7 @@ const App = () => {
 
   const fetchWeather = async () => {
     try {
-      const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=2024-08-01T00:00:00Z/t_2m:C/52.520551,13.461804=${location}&days=1`);
+      const response = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=API_KEY=${location}&days=1`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
